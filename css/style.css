@@ -1,0 +1,102 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    /* padding: 15px 0; */
+}
+
+.navbar-brand {
+    /* font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff !important; */
+}
+.navbar-brand img {
+    border-radius: 5px;
+}
+
+.nav-link {
+    color: #fff ;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #ccc ;
+}
+
+/* ===== HERO ===== */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* ===== BUTTONS ===== */
+.btn-black {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.btn-black:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* ===== CARDS ===== */
+.card {
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* ===== FILTRES ===== */
+button.btn {
+    border-radius: 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #aaa;
+}
+
+/* ===== UTILITIES ===== */
+.text-muted {
+    color: #aaa ;
+}
