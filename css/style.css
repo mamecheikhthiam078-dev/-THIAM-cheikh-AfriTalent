@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* commit 3 */
 * {
     margin: 0;
     padding: 0;
@@ -99,4 +99,805 @@ footer a:hover {
 /* ===== UTILITIES ===== */
 .text-muted {
     color: #aaa ;
+}
+/* commit 4 index */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+}
+
+#hero img:hover {
+    transform: scale(1.03);
+}
+#comment .card {
+    background: #111;
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.4s;
+    min-height: 250px;
+}
+
+#comment .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+#services .card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+#services .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px rgba(255,255,255,0.2);
+}
+
+#services img {
+    height: 250px;
+    object-fit: cover;
+}
+
+#temoignages .card {
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+#temoignages .card:hover {
+    transform: scale(1.03);
+}
+
+
+#cta {
+    background: linear-gradient(to right, #000, #1a1a1a);
+}
+
+#cta .btn {
+    border: 1px solid white;
+    transition: 0.4s;
+}
+
+#cta .btn:hover {
+    background: white;
+    color: black !important;
+}
+
+
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #comment .row {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* commit 4 freelance */
+/* =========================
+   PAGE FREELANCES
+========================= */
+
+/* HERO */
+
+main h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+main p {
+    color: #cfcfcf;
+}
+
+/* BOUTONS FILTRES */
+
+.btn-outline-light {
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.4s;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* CARTES FREELANCES */
+
+.card {
+    border-radius: 20px;
+    transition: 0.4s;
+    background: #111 !important;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,255,255,0.15);
+}
+
+/* NOM */
+
+.card h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* METIER */
+
+.card p:nth-child(2) {
+    color: #aaaaaa;
+}
+
+/* BOUTON PROFIL */
+
+.card .btn {
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.card .btn:hover {
+    background: white;
+    color: black !important;
+}
+
+/* FOOTER */
+
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #bbbbbb !important;
+}
+
+/* ICONES */
+
+footer i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+    color: #cccccc;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    main h1 {
+        font-size: 2.3rem;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+}
+/* commit 4 about */
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #111111,
+        #1b1b1b
+    );
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* =========================
+   BENTO GRID
+========================= */
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+    gap: 20px;
+}
+
+.bento-card {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.4s;
+}
+
+.bento-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffc107;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
+}
+
+.bento-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    transition: 0.4s ease;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255,255,255,0.1);
+}
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.category-card {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    background: #1a1a1a;
+    box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+}
+
+.category-card h5 {
+    margin-top: 15px;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.team-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.carousel-item {
+    padding: 40px;
+}
+
+.testimonial-card {
+    background: #111;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid #333;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #cccccc;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bento-large {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+}
+/* commit 4 tarifs */
+/* =========================
+   PAGE TARIFS
+========================= */
+
+body {
+    background: black;
+    color: white;
+}
+
+/* HERO TARIFS */
+
+.pricing-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #000,
+        #111,
+        #1a1a1a
+    );
+}
+
+.pricing-hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.pricing-hero p {
+    color: #cccccc;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   PRICING CARDS
+========================= */
+
+.pricing-card {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 40px 30px;
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-12px);
+    border-color: #ffc107;
+    box-shadow: 0 20px 40px rgba(255, 193, 7, 0.15);
+}
+
+.pricing-card h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.pricing-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 12px;
+    color: #cccccc;
+}
+
+.pricing-card button {
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.pricing-card button:hover {
+    background: white;
+    color: black;
+}
+
+/* PLAN POPULAIRE */
+
+.popular-plan {
+    border: 2px solid #0dcaf0;
+    transform: scale(1.05);
+}
+
+.popular-plan:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 15px;
+    right: -40px;
+    background: #0dcaf0;
+    color: black;
+    padding: 8px 50px;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 15px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-weight: bold;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #222 !important;
+    color: #ffc107 !important;
+}
+
+.accordion-body {
+    background: #111;
+    color: #cccccc;
+}
+
+/* =========================
+   HOVER GLOBAL
+========================= */
+
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255,255,255,0.08);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+    .pricing-hero h1 {
+        font-size: 3rem;
+    }
+
+    .popular-plan {
+        transform: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .pricing-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-card {
+        padding: 30px 20px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+}
+/* commit 4 contact */
+/* =========================
+   PAGE CONTACT
+========================= */
+
+body {
+    background: #000;
+    color: white;
+}
+
+/* HERO CONTACT */
+
+.contact-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #000,
+        #111,
+        #1a1a1a
+    );
+}
+
+.contact-hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.contact-hero p {
+    color: #cccccc;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   FORMULAIRE
+========================= */
+
+.contact-form {
+    background: #111;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    transition: 0.4s;
+}
+
+.contact-form:hover {
+    border-color: #ffc107;
+    box-shadow: 0 15px 35px rgba(255, 193, 7, 0.15);
+}
+
+/* INPUTS */
+
+.form-control {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+    padding: 14px;
+}
+
+.form-control:focus {
+    background: #222;
+    color: white;
+    border-color: #ffc107;
+    box-shadow: none;
+}
+
+/* PLACEHOLDER */
+
+.form-control::placeholder {
+    color: #999;
+}
+
+/* SELECT */
+
+select.form-control option {
+    background: #111;
+    color: white;
+}
+
+/* BUTTON */
+
+.contact-form button {
+    padding: 14px;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ffc107;
+    color: black;
+}
+
+/* =========================
+   INFOS CONTACT
+========================= */
+
+.contact-info {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 40px;
+    transition: 0.4s;
+}
+
+.contact-info:hover {
+    transform: translateY(-8px);
+    border-color: #0dcaf0;
+    box-shadow: 0 15px 35px rgba(13, 202, 240, 0.15);
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.map-container iframe {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* =========================
+   CARDS FOOTER
+========================= */
+
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255,255,255,0.08);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffc107 !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+    .contact-hero h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form,
+    .contact-info {
+        padding: 25px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
 }
