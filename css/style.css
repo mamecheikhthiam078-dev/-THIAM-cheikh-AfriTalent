@@ -901,3 +901,350 @@ a:hover {
     }
 
 }
+/* commit 5 index hero */
+@media (max-width: 768px) {
+
+    #hero {
+        text-align: center;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero img {
+        margin-top: 20px;
+    }
+}
+/* commit 5 index temoinages */
+@media (max-width: 768px) {
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .carousel-item .card {
+        width: 100%;
+    }
+}
+/* commit 5 about */
+/* IMAGE EQUIPE */
+.team-img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px){
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .team-img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .navbar-brand span{
+        font-size: 1rem;
+    }
+
+}
+
+/* TABLETTE */
+@media screen and (min-width: 768px){
+
+    .team-img{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px){
+
+    .team-img{
+        width: 120px;
+        height: 120px;
+    }
+
+}
+/* commit 5 tarifs */
+/* HERO TARIFS */
+.pricing-hero{
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* CARTES */
+.card{
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px){
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .pricing-hero{
+        min-height: 30vh;
+        padding: 1rem;
+    }
+
+    .navbar-brand span{
+        font-size: 1rem;
+    }
+
+    .accordion-button{
+        font-size: 14px;
+    }
+
+}
+
+/* TABLETTE */
+@media screen and (min-width: 768px){
+
+    .pricing-hero{
+        min-height: 35vh;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px){
+
+    .pricing-hero{
+        min-height: 45vh;
+    }
+
+}
+/* commit 5 freelance  */
+/* =========================
+   STYLE GLOBAL
+========================= */
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Images responsives */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Boutons */
+.btn {
+    border-radius: 8px;
+}
+
+/* Navbar */
+.navbar-brand span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   MOBILE : 375px
+========================= */
+
+@media screen and (max-width: 576px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    footer .card {
+        text-align: center;
+    }
+}
+
+/* =========================
+   TABLETTE : 768px
+========================= */
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    footer .card {
+        min-height: 250px;
+    }
+}
+
+/* =========================
+   DESKTOP : 1200px+
+========================= */
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
+/* commit 5 contact */
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.contact-hero {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 12px;
+}
+
+.contact-info,
+.map-container {
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* =========================
+   MOBILE 375px
+========================= */
+
+@media screen and (max-width: 576px) {
+
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-hero p {
+        font-size: 0.95rem;
+    }
+
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    footer .card {
+        text-align: center;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
+
+/* =========================
+   TABLETTE 768px
+========================= */
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-info,
+    .map-container {
+        padding: 25px;
+    }
+}
+
+/* =========================
+   DESKTOP 1200px+
+========================= */
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .contact-hero h1 {
+        font-size: 3rem;
+    }
+}
