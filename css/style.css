@@ -901,7 +901,7 @@ a:hover {
     }
 
 }
-/* commit 5 index hero */
+/* commit 5 index hero
 @media (max-width: 768px) {
 
     #hero {
@@ -915,164 +915,8 @@ a:hover {
     #hero img {
         margin-top: 20px;
     }
-}
-/* commit 5 index temoinages */
-@media (max-width: 768px) {
-
-    .avatar {
-        width: 70px;
-        height: 70px;
-    }
-
-    .carousel-item .card {
-        width: 100%;
-    }
-}
-/* commit 5 about */
-/* IMAGE EQUIPE */
-.team-img{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-}
-
-/* MOBILE */
-@media screen and (max-width: 576px){
-
-    h1{
-        font-size: 2rem;
-    }
-
-    h2{
-        font-size: 1.5rem;
-    }
-
-    p{
-        font-size: 14px;
-    }
-
-    .team-img{
-        width: 90px;
-        height: 90px;
-    }
-
-    .navbar-brand span{
-        font-size: 1rem;
-    }
-
-}
-
-/* TABLETTE */
-@media screen and (min-width: 768px){
-
-    .team-img{
-        width: 100px;
-        height: 100px;
-    }
-
-}
-
-/* DESKTOP */
-@media screen and (min-width: 1200px){
-
-    .team-img{
-        width: 120px;
-        height: 120px;
-    }
-
-}
-/* commit 5 tarifs */
-/* HERO TARIFS */
-.pricing-hero{
-    min-height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-}
-
-/* CARTES */
-.card{
-    transition: 0.3s ease;
-}
-
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
-}
-
-/* MOBILE */
-@media screen and (max-width: 576px){
-
-    h1{
-        font-size: 2rem;
-    }
-
-    h2{
-        font-size: 1.5rem;
-    }
-
-    p{
-        font-size: 14px;
-    }
-
-    .pricing-hero{
-        min-height: 30vh;
-        padding: 1rem;
-    }
-
-    .navbar-brand span{
-        font-size: 1rem;
-    }
-
-    .accordion-button{
-        font-size: 14px;
-    }
-
-}
-
-/* TABLETTE */
-@media screen and (min-width: 768px){
-
-    .pricing-hero{
-        min-height: 35vh;
-    }
-
-}
-
-/* DESKTOP */
-@media screen and (min-width: 1200px){
-
-    .pricing-hero{
-        min-height: 45vh;
-    }
-
-}
+} */
 /* commit 5 freelance  */
-/* =========================
-   STYLE GLOBAL
-========================= */
-
-body {
-    background-color: black;
-    color: white;
-    overflow-x: hidden;
-}
-
-.card {
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* Images responsives */
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 /* Boutons */
 .btn {
@@ -1247,4 +1091,69 @@ body {
     .contact-hero h1 {
         font-size: 3rem;
     }
+}
+/* commite 6 */
+/* MODE CLAIR */
+body.light-mode {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Tous les fonds noirs deviennent blancs */
+body.light-mode .bg-black {
+    background-color: white !important;
+}
+
+/* Tous les textes blancs deviennent noirs */
+body.light-mode .text-white {
+    color: black !important;
+}
+
+/* Toutes les bordures blanches deviennent noires */
+body.light-mode .border-white {
+    border-color: black !important;
+}
+
+/* Les cartes */
+body.light-mode .card {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Navbar */
+body.light-mode .navbar {
+    background-color: white !important;
+}
+
+body.light-mode .navbar-brand,
+body.light-mode .nav-link {
+    color: black !important;
+}
+
+/* Bouton du thème */
+body.light-mode #theme-toggle {
+    color: black;
+    border-color: black;
+}
+.contact-hero  {
+    color: white !important;
+}
+.contact-info {
+     color: white !important;
+
+}
+body.light-mode .tarifs-title {
+    color: white !important;
+}
+.navbar-scroll {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
