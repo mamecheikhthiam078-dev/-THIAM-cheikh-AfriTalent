@@ -74,3 +74,66 @@ backToTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+// ===== FADE IN =====
+
+const fadeSections = document.querySelectorAll(".fade-section");
+
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+
+    });
+});
+
+fadeSections.forEach(section => {
+    sectionObserver.observe(section);
+});
+
+
+// ===== COUNTERS =====
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const counter = entry.target;
+            const target = parseInt(counter.dataset.target);
+
+            let count = 0;
+
+            const updateCounter = () => {
+
+                const increment = target / 100;
+
+                if(count < target){
+
+                    count += increment;
+                    counter.textContent = "+" + Math.ceil(count);
+
+                    setTimeout(updateCounter, 20);
+
+                } else {
+
+                    counter.textContent = "+" + target;
+                }
+            };
+
+            updateCounter();
+
+            counterObserver.unobserve(counter);
+        }
+
+    });
+
+});
+
+counters.forEach(counter => {
+    counterObserver.observe(counter);
+});
