@@ -87,24 +87,29 @@
 
                     <!-- PRENOM -->
                     <input type="text"
-                        class="form-control mb-3"
-                        placeholder="Prénom"
-                        required>
+                        id="prenom"
+                        class="form-control mb-1"
+                        placeholder="Prénom">
+                        <div id="prenomError" class="text-danger mb-2"></div>
 
                     <!-- NOM -->
                     <input type="text"
-                        class="form-control mb-3"
-                        placeholder="Nom"
-                        required>
+                        id="nom"
+                        class="form-control mb-1"
+                        placeholder="Nom">
+
+                        <div id="nomError" class="text-danger mb-2"></div>
 
                     <!-- EMAIL -->
                     <input type="email"
-                        class="form-control mb-3"
-                        placeholder="Email"
-                        required>
+                    id="email"
+                    class="form-control mb-1"
+                    placeholder="Email">
+
+                    <div id="emailError" class="text-danger mb-2"></div>
 
                     <!-- SUJET -->
-                    <select class="form-control mb-3" required>
+                    <select id="sujet" class="form-control mb-1">
 
                         <option value="">Choisir un sujet</option>
                         <option>Projet freelance</option>
@@ -113,12 +118,18 @@
 
                     </select>
 
+                    <div id="sujetError" class="text-danger mb-2"></div>
+
                     <!-- MESSAGE -->
                     <textarea
-                        class="form-control mb-3"
-                        rows="5"
-                        placeholder="Message (min 20 caractères)"
-                        required></textarea>
+                    id="message"
+                    class="form-control mb-1"
+                    rows="5"
+                    placeholder="Message (min 20 caractères)"></textarea>
+
+                    <div id="messageError" class="text-danger mb-2"></div>
+                    
+                    <div id="successMessage" class="text-success mb-3"></div>
 
                     <!-- BOUTON -->
                     <button type="submit" class="btn btn-light w-100">
